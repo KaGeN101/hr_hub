@@ -1,14 +1,10 @@
+
 <section class="phx-hero">
-  <h1><%= gettext "Employees" %></h1>
-</section>
+  <h1><%= link("Goto Employees", to: "/employees") %></h1>
+</section> 
 
-<section>
-<div class="row">
-  <%= for employee <- @employees do %>
 
-  <h4><%= employee.first_name %></h4>
-
-  <% end %> 
-</div>
-</section>
-
+<section class="phx-hero">
+  <p>This is  a decoupled implementation of the Employee with their Payslip problem</p>
+  <p>The Business logic and ORM has been purposefuly unbundled out of the Presentation layer</p>
+</section> 

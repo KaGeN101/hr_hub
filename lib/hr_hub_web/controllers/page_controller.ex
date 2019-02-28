@@ -1,10 +1,10 @@
 defmodule HrHubWeb.PageController do
   use HrHubWeb, :controller
 
-  alias PayrollServices.Access
+  alias PayrollServices.Employees
 
   def index(conn, _params) do
-    employees = Access.fetch
+    employees = Employees.fetch
     render(conn, "index.html", employees: employees)
   end
 end
