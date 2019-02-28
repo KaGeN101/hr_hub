@@ -1,0 +1,14 @@
+<section class="phx-hero">
+  <h1><%= gettext "Employees" %></h1>
+</section>
+
+<section>
+<div class="row">
+  <%= for employee <- @employees do %>
+
+  <h4><%= employee.first_name %></h4>
+
+  <% end %> 
+</div>
+</section>
+
