@@ -8,8 +8,6 @@ defmodule HrHub.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Start the Ecto repository
-      #HrHub.Repo,
       # Start the endpoint when the application starts
       HrHubWeb.Endpoint
       # Starts a worker by calling: HrHub.Worker.start_link(arg)

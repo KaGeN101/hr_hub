@@ -7,6 +7,9 @@
 # General application configuration
 use Mix.Config
 
+config :hr_hub,
+  ecto_repos: [HrHub.Repo]
+
 # Configures the endpoint
 config :hr_hub, HrHubWeb.Endpoint,
   url: [host: "localhost"],
